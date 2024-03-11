@@ -64,36 +64,32 @@ public class Form_Home extends javax.swing.JPanel {
 
     public Form_Home() {
         initComponents();
-        card1.setData(new Model_Card(new ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/src/main/java/com.raven.icon/bitcoin.png"), "Bitcoin", "$"+getData("BTC"), "BTC","0.25%"));
-        card2.setData(new Model_Card(new ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/src/main/java/com.raven.icon/litecoin.png"), "Cardano", "$"+getData("ADA"), "ADA","0.25%"));
-        card3.setData(new Model_Card(new ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/src/main/java/com.raven.icon/eth2.png"), "Ethereum", "$"+getData("ETH"), "ETH","0.25%"));
-        card4.setData(new Model_Card(new ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/src/main/java/com.raven.icon/solona.png"), "Solana", "$"+getData("SOL"), "SOL","-0.25%"));
+        card1.setData(new Model_Card(new ImageIcon("C:\\development\\School\\Portfolio-Tracking\\portfoliotracker\\src\\main\\java\\com.raven.icon\\bitcoin.png"), "Bitcoin", "$"+getData("BTC"), "BTC","0.25%"));
+        card2.setData(new Model_Card(new ImageIcon("C:\\development\\School\\Portfolio-Tracking\\portfoliotracker\\src\\main\\java\\com.raven.icon\\litecoin.png"), "Cardano", "$"+getData("ADA"), "ADA","0.25%"));
+        card3.setData(new Model_Card(new ImageIcon("C:\\development\\School\\Portfolio-Tracking\\portfoliotracker\\src\\main\\java\\com.raven.icon\\eth2.png"), "Ethereum", "$"+getData("ETH"), "ETH","0.25%"));
+
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panel = new javax.swing.JLayeredPane();
-        card1 = new com.raven.component.Card();
-        card2 = new com.raven.component.Card();
         card3 = new com.raven.component.Card();
+        panel = new javax.swing.JLayeredPane();
+        card2 = new com.raven.component.Card();
         card4 = new com.raven.component.Card();
+        card1 = new com.raven.component.Card();
+
+        card3.setForeground(new java.awt.Color(27, 32, 40));
 
         panel.setBackground(new java.awt.Color(27, 32, 40));
         panel.setForeground(new java.awt.Color(49, 53, 63));
 
-        card1.setForeground(new java.awt.Color(27, 32, 40));
-
         card2.setForeground(new java.awt.Color(27, 32, 40));
-
-        card3.setForeground(new java.awt.Color(27, 32, 40));
 
         card4.setForeground(new java.awt.Color(27, 32, 40));
 
-        panel.setLayer(card1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         panel.setLayer(card2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        panel.setLayer(card3, javax.swing.JLayeredPane.DEFAULT_LAYER);
         panel.setLayer(card4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
@@ -102,33 +98,30 @@ public class Form_Home extends javax.swing.JPanel {
             panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(card1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(card2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(card3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(card4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(card2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(card4, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(154, Short.MAX_VALUE))
         );
         panelLayout.setVerticalGroup(
             panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(card4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(card3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(card2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(card1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(card4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 12, Short.MAX_VALUE))
         );
+
+        card1.setForeground(new java.awt.Color(27, 32, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 260, Short.MAX_VALUE)
+                .addComponent(card1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -136,7 +129,9 @@ public class Form_Home extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(card1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
