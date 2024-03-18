@@ -43,7 +43,7 @@ public class Model_Menu {
     private MenuType type;
 
     public Icon toIcon() {
-        return new ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/src/main/java/com.raven.icon/" + icon + ".png");
+        return new ImageIcon("src/main/java/com.raven.icon/" + icon + ".png");
     }
 
     public static enum MenuType {
