@@ -64,10 +64,10 @@ public class Form_Home extends javax.swing.JPanel {
 
     public Form_Home() {
         initComponents();
-        card1.setData(new Model_Card(new ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/src/main/java/com.raven.icon/bitcoin.png"), "Bitcoin", "$"+getData("BTC"), "BTC","0.25%"));
-        card2.setData(new Model_Card(new ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/src/main/java/com.raven.icon/litecoin.png"), "Cardano", "$"+getData("ADA"), "ADA","0.25%"));
-        card3.setData(new Model_Card(new ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/src/main/java/com.raven.icon/eth2.png"), "Ethereum", "$"+getData("ETH"), "ETH","0.25%"));
-        card4.setData(new Model_Card(new ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/src/main/java/com.raven.icon/solona.png"), "Solana", "$"+getData("SOL"), "SOL","-0.25%"));
+        card1.setData(new Model_Card(new ImageIcon("src/main/java/com.raven.icon/bitcoin.png"), "Bitcoin", "$"+getData("BTC"), "BTC","0.25%"));
+        card2.setData(new Model_Card(new ImageIcon("src/main/java/com.raven.icon/litecoin.png"), "Cardano", "$"+getData("ADA"), "ADA","0.25%"));
+        card3.setData(new Model_Card(new ImageIcon("src/main/java/com.raven.icon/eth2.png"), "Ethereum", "$"+getData("ETH"), "ETH","0.25%"));
+        card4.setData(new Model_Card(new ImageIcon("src/main/java/com.raven.icon/solona.png"), "Solana", "$"+getData("SOL"), "SOL","-0.25%"));
     }
 
     @SuppressWarnings("unchecked")

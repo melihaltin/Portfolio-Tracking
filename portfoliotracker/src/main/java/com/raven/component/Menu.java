@@ -12,6 +12,7 @@ import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 /**
@@ -31,6 +32,7 @@ public class Menu extends javax.swing.JPanel {
     }
     
     private void init() {
+        jLabel1.setIcon(new ImageIcon("src/main/java/com.raven.icon/Logo.png"));
         listMenu1.addItem(new Model_Menu("overview", "Overview", Model_Menu.MenuType.MENU));
         listMenu1.addItem(new Model_Menu("chart", "Chart", Model_Menu.MenuType.MENU));
         listMenu1.addItem(new Model_Menu("transactions", "Transactions", Model_Menu.MenuType.MENU));
@@ -64,7 +66,6 @@ public class Menu extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Helvetica", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/icons/Logo.png")); // NOI18N
         jLabel1.setText("Logoipsm");
         jLabel1.setToolTipText("");
 

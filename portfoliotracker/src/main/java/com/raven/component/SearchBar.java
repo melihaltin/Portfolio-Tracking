@@ -4,6 +4,7 @@ package com.raven.component;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+import javax.swing.ImageIcon;
 
 
 public class SearchBar extends javax.swing.JPanel {
@@ -16,6 +17,7 @@ public class SearchBar extends javax.swing.JPanel {
 
     @Override
     protected void paintComponent(Graphics grphcs) {
+        jLabel2.setIcon(new ImageIcon("src/main/java/com.raven.icon/search.png"));
         Graphics2D g2 = (Graphics2D) grphcs;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2.setColor(getBackground());

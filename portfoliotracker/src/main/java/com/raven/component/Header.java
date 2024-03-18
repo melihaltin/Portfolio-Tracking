@@ -4,6 +4,7 @@ package com.raven.component;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+import javax.swing.ImageIcon;
 
 public class Header extends javax.swing.JPanel {
 
@@ -17,6 +18,8 @@ public class Header extends javax.swing.JPanel {
     
     @Override
     protected void paintComponent(Graphics grphcs) {
+        jLabel2.setIcon(new ImageIcon("src/main/java/com.raven.icon/bildirim.png"));
+        jLabel4.setIcon(new ImageIcon("src/main/java/com.raven.icon/profile.png"));
         Graphics2D g2 = (Graphics2D) grphcs;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2.setColor(getBackground());
@@ -40,10 +43,6 @@ public class Header extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Dashboard");
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/icons/bildirim.png")); // NOI18N
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("/Users/ahmetcantemel/NetBeansProjects/portfoliotracker/icons/profile.png")); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));

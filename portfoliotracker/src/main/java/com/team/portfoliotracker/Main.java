@@ -1,5 +1,5 @@
 
- package com.team.portfoliotracker;
+package com.team.portfoliotracker;
 
 import java.awt.Color;
 import java.io.BufferedReader;
@@ -25,7 +25,6 @@ public class Main extends javax.swing.JFrame {
         form_Home1 = new com.raven.form.Form_Home();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
 
         panelBorder1.setBackground(new java.awt.Color(49, 53, 63));
 
