@@ -9,7 +9,7 @@ package com.deu.utils;
  * @author melihaltin
  */
 
-import com.raven.model.Currency;
+import com.deu.model.Currency;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

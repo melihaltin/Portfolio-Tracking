@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import javax.swing.JOptionPane;
 import org.json.JSONObject;
 
 /**
@@ -50,6 +51,7 @@ public class ApiServices {
                 in.close();
 
                 JSONObject jsonResponse = new JSONObject(response.toString());
+                
 
                 // Extract data from the JSON object
                 String symbol = jsonResponse.getString("symbol");
@@ -57,10 +59,13 @@ public class ApiServices {
                 double volume24h = jsonResponse.getDouble("volume_24h");
                 double lastTradePrice = jsonResponse.getDouble("last_trade_price");
             } else {
-                System.out.println("HTTP GET request failed with response code: " + responseCode);
+                 JOptionPane.showMessageDialog(null, "No match found for: " + coin, "Result", JOptionPane.INFORMATION_MESSAGE);
+              
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "No match found for: " + coin, "Result", JOptionPane.INFORMATION_MESSAGE);
+                    
+            
         }
 
         return price24h;

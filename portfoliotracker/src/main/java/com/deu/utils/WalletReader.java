@@ -13,7 +13,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import com.raven.model.Currency;
+import com.deu.model.Currency;
 import com.deu.utils.ApiServices;
 
 public class WalletReader {
